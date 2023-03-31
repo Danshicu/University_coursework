@@ -1,0 +1,36 @@
+concept_position_relative_to_the_surface
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Позиция относительно поверхности]
+	(* <- lang_ru;; *);
+	[Position relative to the surface]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Позиция относительно поверхности)]
+		(* <- lang_ru;; *);
+		[Def. (Position relative to the surface)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Позиция относительно поверхности - понятие, определяющее вертикальное расположение объекта в зависимости от уровня поверхности.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Position relative to the surface - a concept that determines the vertical location of an object depending on the level of the surface.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_position_relative_to_the_surface
+		};;
+	*);;
+
+<= nrel_inclusion: concept_geography;;

@@ -12,14 +12,14 @@ nrel_network_of_tributaries
 	[network of tributaries]
 	(* <- lang_en;; *);
 =>nrel_first_domain: concept_river;
-=>nrel_second_domain: concept_number;
+=>nrel_second_domain: concept_network_of_tributaries;
 =>nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination:
 		{
 		concept_river;
-		concept_number
+		concept_network_of_tributaries
 		};;
 	*);
 <- rrel_key_sc_element:
@@ -47,6 +47,6 @@ nrel_network_of_tributaries
 	<= nrel_using_constants:
 		{
             concept_river;
-		    concept_number
+		    concept_network_of_tributaries
 		};;
 	*);;

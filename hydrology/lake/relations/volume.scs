@@ -12,14 +12,14 @@ nrel_volume
 	[volume]
 	(* <- lang_en;; *);
 =>nrel_first_domain: concept_lake;
-=>nrel_second_domain: concept_number;
+=>nrel_second_domain: concept_volume;
 =>nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination:
 		{
 		concept_lake;
-		concept_number
+		concept_volume
 		};;
 	*);
 <- rrel_key_sc_element:
@@ -35,18 +35,18 @@ nrel_volume
 		...
 		(*
 		->rrel_example:
-			[объём* - бинарное отношение, связывающее озеро и число.]
+			[объём* - бинарное отношение, связывающее озеро и его объём.]
 			(* <- lang_ru;; *);;
 		*);
 		...
 		(*
 		-> rrel_example: 
-			[volume* - a binary relation that connects a lake and a number.]
+			[volume* - a binary relation that connects a lake and its volume.]
 			(* <- lang_en;; *);;
 		*);;
 	<= nrel_using_constants:
 		{
             concept_lake;
-		    concept_number
+		    concept_volume
 		};;
 	*);;

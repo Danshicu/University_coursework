@@ -1,0 +1,77 @@
+section_subject_domain_of_hydrology
+=> nrel_main_idtf:
+        [Раздел. Предметная область гидрологии]
+    (* <- lang_ru;; );
+        [Section. Subject domain of hydrology]
+    ( <- lang_en;; *);
+<- atomic_section;;
+
+section_subject_domain_of_hydrology = [*
+        subject_domain_of_hydrology
+    <- sc_node_struct;
+        => nrel_main_idtf:
+            [Предметная область Гидрология]
+            (* <- lang_ru;; );
+            [Subject domain of Hydrology]
+            ( <- lang_en;; *);
+        <- subject_domain;
+    -> rrel_maximum_studied_object_class:
+        concept_lake;
+        concept_lake_group;
+        concept_water_cycle;
+        concept_surface_water;
+        concept_groundwater;
+        concept_water_quality;
+        concept_hydrological_model;
+        concept_flood_forecasting;
+        concept_watershed_management;
+        concept_climate_change_impact_on_water;
+        concept_stream_gauging;
+        concept_river;
+        concept_river_system;
+        concept_marine_hydrology;
+        concept_hydrological_data_analysis;
+        concept_surface_water_management;
+        concept_water_quality_assessment;
+        concept_flood;
+        concept_drought;
+        concept_hydrology_object;
+
+    -> rrel_not_maximum_studied_object_class:
+        concept_hydroelectric_power_generation;
+        concept_hydrology;
+
+    -> rrel_explored_relation:
+        nrel_lake_group;
+        nrel_water_flow;
+        nrel_water_pollution;
+        nrel_hydrological_model;
+        nrel_river_network;;
+*];;
+
+section_subject_domain_of_hydrology
+-> rrel_key_sc_element:
+    concept_lake;
+    concept_lake_group;
+    concept_water_cycle;
+    concept_surface_water;
+    concept_groundwater;
+    concept_water_quality;
+    concept_hydrological_model;
+    concept_flood_forecasting;
+    concept_watershed_management;
+    concept_climate_change_impact_on_water;
+    concept_stream_gauging;
+    concept_river;
+    concept_river_system;
+    concept_hydrological_data_analysis;
+    concept_hydroelectric_power_generation;
+    concept_marine_hydrology;
+    concept_flood;
+    concept_drought;
+    concept_hydrology_object;
+    nrel_water_flow;
+    nrel_water_pollution;
+    nrel_hydrological_model;
+    nrel_river_network;
+    nrel_lake_group;;

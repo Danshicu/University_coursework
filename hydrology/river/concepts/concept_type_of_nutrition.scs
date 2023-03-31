@@ -1,0 +1,37 @@
+concept_type_of_nutrition
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Вид питания]
+	(* <- lang_ru;; *);
+	[Type of nutrition]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Вид питания)]
+		(* <- lang_ru;; *);
+		[Def. (Type of nutrition)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Вид питания - обобщённое понятие водотоков, описывающее способ пополнения водных ресурсов водотока.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Type of nutrition is the generalized concept of watercourses, describing the way in which the water resources of a watercourse are replenished.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_watercourse;
+            concept_type_of_nutrition
+		};;
+	*);;
+
+<= nrel_inclusion: concept_hydrology;;

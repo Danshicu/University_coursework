@@ -12,14 +12,14 @@ nrel_river_fall
 	[river fall]
 	(* <- lang_en;; *);
 =>nrel_first_domain: concept_river;
-=>nrel_second_domain: concept_number;
+=>nrel_second_domain: concept_river_fall;
 =>nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination:
 		{
 		concept_river;
-		concept_number
+		concept_river_fall
 		};;
 	*);
 <- rrel_key_sc_element:
@@ -35,18 +35,18 @@ nrel_river_fall
 		...
 		(*
 		->rrel_example:
-			[падение реки* - бинарное отношение, связывающее реку и число.]
+			[падение реки* - бинарное отношение, связывающее реку и её падение.]
 			(* <- lang_ru;; *);;
 		*);
 		...
 		(*
 		-> rrel_example: 
-			[river fall* - a binary relation that connects a river and a number.]
+			[river fall* - a binary relation that connects a river and its fall.]
 			(* <- lang_en;; *);;
 		*);;
 	<= nrel_using_constants:
 		{
             concept_river;
-		    concept_number
+		    concept_river_fall
 		};;
 	*);;

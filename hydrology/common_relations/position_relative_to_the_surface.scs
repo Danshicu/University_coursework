@@ -11,14 +11,14 @@ nrel_position_relative_to_the_surface
 	(* <- lang_ru;; *);
 	[position relative to the surface]
 	(* <- lang_en;; *);
-=>nrel_first_domain: concept_lake;
+=>nrel_first_domain: concept_hydrology_object;
 =>nrel_second_domain: concept_position_relative_to_the_surface;
 =>nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination:
 		{
-		concept_lake;
+		concept_hydrology_object;
 		concept_position_relative_to_the_surface
 		};;
 	*);
@@ -35,18 +35,18 @@ nrel_position_relative_to_the_surface
 		...
 		(*
 		->rrel_example:
-			[положение относительно поверхности* - бинарное отношение, связывающее озеро и положение относительно поверхности.]
+			[положение относительно поверхности* - бинарное отношение, связывающее объект гидрологии и положение относительно поверхности.]
 			(* <- lang_ru;; *);;
 		*);
 		...
 		(*
 		-> rrel_example: 
-			[position relative to the surface* - a binary relation that connects a lake and position relative to the surface.]
+			[position relative to the surface* - a binary relation that connects a hydrology object and position relative to the surface.]
 			(* <- lang_en;; *);;
 		*);;
 	<= nrel_using_constants:
 		{
-            concept_lake;
+            concept_hydrology_object;
 		    concept_position_relative_to_the_surface
 		};;
 	*);;

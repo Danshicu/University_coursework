@@ -20,27 +20,29 @@ section_subject_domain_of_river = [*
             concept_type_of_nutrition;
 	-> rrel_not_maximum_studied_object_class:
             concept_river;
+            concept_hydrology_object;
 	-> rrel_explored_relation:
             nrel_length;
             nrel_age;
             nrel_coordinates;
-            nrel_position_relative_to_the_syrface;
+            nrel_position_relative_to_the_surface;
             nrel_topograpgic;
             nrel_network_of_tributaries;
             nrel_nutritional_conditions;
-            nrel_pool_area;
+            nrel_basin;
             nrel_posibility_of_water_sports;
             nrel_river_fall;
             nrel_river_mouth_type;;
 *];;
 
-section_subject_domain_of_college
+section_subject_domain_of_river
 -> rrel_key_sc_element:
-            concept_river_mouth;     
+            concept_river_mouth;  
+            concept_hydrology_object;   
             concept_type_of_nutrition;
             concept_length;
             concept_network_of_tributaries;
-            concept_pool_area;
+            concept_basin;
             concept_posibility_of_water_sports;
             concept_river_fall;
             nrel_age;

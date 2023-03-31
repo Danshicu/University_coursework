@@ -12,14 +12,14 @@ nrel_posibility_of_water_sport
 	[posibility of water sports]
 	(* <- lang_en;; *);
 =>nrel_first_domain: concept_river;
-=>nrel_second_domain: concept_number;
+=>nrel_second_domain: concept_posibility_of_water_sports;
 =>nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination:
 		{
 		concept_river;
-		concept_number
+		concept_posibility_of_water_sports
 		};;
 	*);
 <- rrel_key_sc_element:
@@ -47,6 +47,6 @@ nrel_posibility_of_water_sport
 	<= nrel_using_constants:
 		{
             concept_river;
-		    concept_number
+		    concept_posibility_of_water_sports
 		};;
 	*);;

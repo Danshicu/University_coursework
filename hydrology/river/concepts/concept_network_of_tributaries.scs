@@ -1,0 +1,38 @@
+concept_network_of_tributaries
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Речная сеть]
+	(* <- lang_ru;; *);
+	[Network of tributaries]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Речная сеть)]
+		(* <- lang_ru;; *);
+		[Def. (Network of tributaries)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Речная сеть - совокупность рек, изливающих воды одним общим руслом или системой протоков в море, озеро или другой водоём.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[A river network is a combination of rivers pouring water into the sea, lake or other hydrology object with one common channel or system of channels.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_number_of_strahler;
+            concept_river;
+            concept_network_of_tributaries
+		};;
+	*);;
+
+<= nrel_inclusion: concept_hydrology;;
