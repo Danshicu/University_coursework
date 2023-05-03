@@ -31,6 +31,6 @@ concept_hydrology_object
 		{
 			concept_hydrology_object
 		};;
-	*);;
+	*);
 
 <= nrel_inclusion: concept_hydrology;;

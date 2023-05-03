@@ -33,6 +33,6 @@ concept_network_of_tributaries
             concept_river;
             concept_network_of_tributaries
 		};;
-	*);;
+	*);
 
 <= nrel_inclusion: concept_hydrology;;

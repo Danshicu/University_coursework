@@ -32,6 +32,6 @@ concept_type_of_nutrition
             concept_watercourse;
             concept_type_of_nutrition
 		};;
-	*);;
+	*);
 
 <= nrel_inclusion: concept_hydrology;;

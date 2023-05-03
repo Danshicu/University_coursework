@@ -31,6 +31,6 @@ concept_position_relative_to_the_surface
 		{
 			concept_position_relative_to_the_surface
 		};;
-	*);;
+	*);
 
 <= nrel_inclusion: concept_geography;;

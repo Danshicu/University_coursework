@@ -29,11 +29,11 @@ concept_water_balance
 		*);;
 	<= nrel_using_constants:
 		{
-            concept inflow;
+            concept_inflow;
             concept_outflow;
             concept_accumulation;
 			concept_water_balance
 		};;
-	*);;
+	*);
 
 	<= nrel_inclusion: concept_hydrology;;

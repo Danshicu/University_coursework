@@ -33,6 +33,6 @@ concept_possibility_of_water_sports
             concept_river;
             concept_possibility_of_water_sports
 		};;
-	*);;
+	*);
 
 <= nrel_inclusion: concept_hydrology;;

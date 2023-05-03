@@ -33,6 +33,6 @@ concept_coastine_length
             concept_length;
 			concept_coastine_length
 		};;
-	*);;
+	*);
 
 	<= nrel_inclusion: concept_geography;;

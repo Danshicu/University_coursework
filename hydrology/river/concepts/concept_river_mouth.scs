@@ -33,6 +33,6 @@ concept_river_mouth
             concept_watercourse;
             concept_hydrology_object
 		};;
-	*);;
+	*);
 
 <= nrel_inclusion: concept_hydrology;;
