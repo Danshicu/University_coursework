@@ -1,0 +1,36 @@
+concept_hydrological_model
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Гидрологическая модель]
+	(* <- lang_ru;; *);
+	[Hydrological Model]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Гидрологическая модель)]
+		(* <- lang_ru;; *);
+		[Def. (Hydrological Model)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Гидрологическая модель - это математическая модель, используемая для описания поведения воды в природной среде, включая притоки, стоки, перенос загрязнений, затопления и другие гидрологические явления. Гидрологические модели используются для прогнозирования наводнений, планирования водохозяйственной деятельности и оценки влияния климатических изменений на водный баланс.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example:
+			[A hydrological model is a mathematical model used to describe the behavior of water in the natural environment, including inflows, outflows, pollutant transport, flooding, and other hydrological phenomena. Hydrological models are used for flood forecasting, water management planning, and assessing the impact of climate change on the water balance.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hydrological_model
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

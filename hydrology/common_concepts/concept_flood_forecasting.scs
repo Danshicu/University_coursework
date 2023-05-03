@@ -1,0 +1,36 @@
+concept_flood_forecasting
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Предсказание наводнений]
+	(* <- lang_ru;; *);
+	[Flood Prediction]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Предсказание наводнений)]
+		(* <- lang_ru;; *);
+		[Def. (Flood Prediction)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Предсказание наводнений - это процесс определения вероятности возникновения наводнения в определенной местности и в определенный период времени. Для этого используются различные методы, включая гидрологические моделирование, анализ исторических данных, метеорологические прогнозы и т.д. Предсказание наводнений является важным инструментом для предотвращения человеческих жертв и материальных потерь, связанных с наводнениями.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example:
+			[Flood prediction is the process of determining the likelihood of a flood occurring in a specific area and during a specific period of time. Various methods are used for this, including hydrological modeling, analysis of historical data, meteorological forecasts, and more. Flood prediction is an important tool for preventing human casualties and material losses associated with floods.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_flood_forecasting
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

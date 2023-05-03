@@ -33,4 +33,4 @@ concept_position_relative_to_the_surface
 		};;
 	*);
 
-<= nrel_inclusion: concept_geography;;
+<= nrel_inclusion: concept_hydrology;;

@@ -1,0 +1,36 @@
+concept_groundwater
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Подземные воды]
+	(* <- lang_ru;; *);
+	[Groundwater]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Подземные воды)]
+		(* <- lang_ru;; *);
+		[Def. (Groundwater)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Подземные воды - это объекты гидрологии, находящиеся в земле, в пустотах, щелях, трещинах и порах горных пород, которые могут быть использованы для питьевого водоснабжения и других целей.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example:
+			[Groundwater is the hydrology object located beneath the Earth's surface in voids, fissures, and pores of rock formations, which can be used for drinking water supply and other purposes.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_groundwater
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

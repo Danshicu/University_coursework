@@ -16,6 +16,8 @@ section_subject_domain_of_hydrology = [*
             (* <- lang_en;; *);
         <- subject_domain;
     -> rrel_maximum_studied_object_class:
+        concept_hydrology;
+    -> rrel_not_maximum_studied_object_class:
         concept_lake;
         concept_lake_group;
         concept_water_cycle;
@@ -26,21 +28,16 @@ section_subject_domain_of_hydrology = [*
         concept_flood_forecasting;
         concept_watershed_management;
         concept_climate_change_impact_on_water;
-        concept_stream_gauging;
+        concept_hydrometry;
         concept_river;
         concept_river_system;
         concept_marine_hydrology;
         concept_hydrological_data_analysis;
         concept_surface_water_management;
-        concept_water_quality_assessment;
+        concept_water_quality;
         concept_flood;
         concept_drought;
         concept_hydrology_object;
-
-    -> rrel_not_maximum_studied_object_class:
-        concept_hydroelectric_power_generation;
-        concept_hydrology;
-
     -> rrel_explored_relation:
         nrel_lake_group;
         nrel_water_flow;
@@ -61,7 +58,7 @@ section_subject_domain_of_hydrology
     concept_flood_forecasting;
     concept_watershed_management;
     concept_climate_change_impact_on_water;
-    concept_stream_gauging;
+    concept_hydrometry;
     concept_river;
     concept_river_system;
     concept_hydrological_data_analysis;

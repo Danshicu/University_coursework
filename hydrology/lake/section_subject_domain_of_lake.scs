@@ -16,12 +16,11 @@ section_subject_domain_of_lake = [*
       (* <- lang_en;; *);
 	<- subject_domain;
 	-> rrel_maximum_studied_object_class:
+            concept_hydrology_object;
+	-> rrel_not_maximum_studied_object_class:
             concept_origin_type;     
             concept_water_balance;
             concept_water_basin_area;
-	-> rrel_not_maximum_studied_object_class:
-            concept_lake;
-            concept_hydrology_object;
 	-> rrel_explored_relation:
             nrel_age;
             nrel_coordinates;

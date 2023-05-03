@@ -1,0 +1,36 @@
+concept_climate_change_impact_on_water
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Воздействие изменения климата на воду]
+	(* <- lang_ru;; *);
+	[Impact of Climate Change on Water]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Воздействие изменения климата на воду)]
+		(* <- lang_ru;; *);
+		[Def. (Impact of Climate Change on Water)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Воздействие изменения климата на воду - это изменение водного цикла, вызванное глобальным изменением климата, которое влияет на количество, качество и доступность пресной воды. Климатические изменения приводят к увеличению площади засушливых и затопляемых зон, изменению местоположения и режимов водных объектов, повышению уровня морей и океанов, изменению температуры и количества осадков. Это влияет на экосистемы, здоровье людей и доступность пресной воды для сельского хозяйства, промышленности и других видов экономической деятельности.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example:
+			[The impact of climate change on water is the alteration of the water cycle caused by global climate change, which affects the quantity, quality, and availability of freshwater. Climate change leads to an increase in arid and inundated areas, changes in the location and regimes of water bodies, rising sea and ocean levels, and alterations in temperature and precipitation. This impacts ecosystems, human health, and the availability of freshwater for agriculture, industry, and other economic activities.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_climate_change_impact_on_water
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

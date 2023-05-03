@@ -1,0 +1,36 @@
+concept_river_system
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Система рек]
+	(* <- lang_ru;; *);
+	[River system]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Система рек)]
+		(* <- lang_ru;; *);
+		[Def. (River system)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Система рек - это совокупность рек, образующих единую водную систему, которая может включать в себя реки, притоки, озера и другие водные объекты, связанные между собой течением воды.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[A river system is a collection of rivers that form a single water system, which may include rivers, tributaries, lakes, and other water bodies connected by the flow of water.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_river_system
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

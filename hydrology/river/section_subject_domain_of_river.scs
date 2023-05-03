@@ -16,11 +16,10 @@ section_subject_domain_of_river = [*
       (* <- lang_en;; *);
 	<- subject_domain;
 	-> rrel_maximum_studied_object_class:
+            concept_hydrology_object;
+	-> rrel_not_maximum_studied_object_class:
             concept_river_mouth;     
             concept_type_of_nutrition;
-	-> rrel_not_maximum_studied_object_class:
-            concept_river;
-            concept_hydrology_object;
 	-> rrel_explored_relation:
             nrel_length;
             nrel_age;

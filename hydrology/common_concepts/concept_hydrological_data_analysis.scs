@@ -1,0 +1,36 @@
+concept_hydrological_data_analysis
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Анализ гидрологических данных]
+	(* <- lang_ru;; *);
+	[Hydrological data analysis]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Анализ гидрологических данных)]
+		(* <- lang_ru;; *);
+		[Def. (Hydrological data analysis)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Анализ гидрологических данных - это процесс сбора, обработки и интерпретации данных о состоянии водных ресурсов в определенной территории.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Hydrological data analysis is the process of collecting, processing, and interpreting data on the state of water resources in a particular area.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hydrological_data_analysis
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;
