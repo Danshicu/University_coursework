@@ -33,6 +33,6 @@ concept_water_basin_area
             concept_hydrology_object;
 			concept_water_basin_area
 		};;
-	*);;
+	*);
     
     <= nrel_inclusion: concept_hydrology;;
