@@ -29,6 +29,7 @@ concept_river_system
 		*);;
 	<= nrel_using_constants:
 		{
+			concept_river;
 			concept_river_system
 		};;
 	*);

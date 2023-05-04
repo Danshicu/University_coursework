@@ -29,6 +29,7 @@ concept_hydroelectric_power_generation
 		*);;
 	<= nrel_using_constants:
 		{
+			concept_watercourse;
 			concept_hydroelectric_power_generation
 		};;
 	*);

@@ -29,6 +29,7 @@ concept_groundwater
 		*);;
 	<= nrel_using_constants:
 		{
+			concept_hydrology_object;
 			concept_groundwater
 		};;
 	*);

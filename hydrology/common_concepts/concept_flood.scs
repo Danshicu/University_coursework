@@ -29,6 +29,7 @@ concept_flood
 		*);;
 	<= nrel_using_constants:
 		{
+			concept_volume;
 			concept_flood
 		};;
 	*);

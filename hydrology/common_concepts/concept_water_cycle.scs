@@ -29,6 +29,12 @@ concept_water_cycle
 		*);;
 	<= nrel_using_constants:
 		{
+			concept_evaporation;
+			concept_condensation;
+			concept_precipitation;
+			concept_infiltration;
+			concept_melting;
+			concept_water_runoff;
 			concept_water_cycle
 		};;
 	*);

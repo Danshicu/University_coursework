@@ -20,6 +20,7 @@ section_subject_domain_of_river = [*
 	-> rrel_not_maximum_studied_object_class:
             concept_river_mouth;     
             concept_type_of_nutrition;
+            concept_water_basin_area;
 	-> rrel_explored_relation:
             nrel_length;
             nrel_age;
@@ -44,6 +45,7 @@ section_subject_domain_of_river
             concept_basin;
             concept_posibility_of_water_sports;
             concept_river_fall;
+            concept_water_basin_area;
             nrel_age;
             nrel_coordinates;
             nrel_position_relative_to_the_surface;

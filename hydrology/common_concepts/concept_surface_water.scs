@@ -29,6 +29,7 @@ concept_surface_water
 		*);;
 	<= nrel_using_constants:
 		{
+			concept_hydrology_object;
 			concept_surface_water
 		};;
 	*);

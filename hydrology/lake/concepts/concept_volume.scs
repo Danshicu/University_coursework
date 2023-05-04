@@ -1,0 +1,38 @@
+concept_volume
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Объём]
+	(* <- lang_ru;; *);
+	[Volume]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Объём)]
+		(* <- lang_ru;; *);
+		[Def. (Volume)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Объём - это физическая величина, показывающая, сколько места занимает тело, вещество или среда.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Volume is a physical quantity that shows how much space a body, substance, or medium occupies.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_number;
+            concept_measurement_value;
+			concept_volume
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;
