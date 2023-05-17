@@ -1,0 +1,37 @@
+concept_surface_water
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Поверхностные воды]
+	(* <- lang_ru;; *);
+	[Surface Water]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Поверхностные воды)]
+		(* <- lang_ru;; *);
+		[Def. (Surface Water)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Поверхностные воды - это объекты гидрологии, находящиеся на земной поверхности, включая озера, реки, ручьи, водохранилища, моря и океаны.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		->rrel_example:
+			[Surface water is the hydrology object located on the Earth's surface, including lakes, rivers, streams, reservoirs, seas, and oceans.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hydrology_object;
+			concept_surface_water
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrography;;

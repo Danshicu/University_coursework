@@ -1,0 +1,38 @@
+concept_sea
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Море]
+	(* <- lang_ru;; *);
+	[Sea]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Море)]
+		(* <- lang_ru;; *);
+		[Def. (Sea)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Море - это соленая или слабосоленая часть океана или другого большого водного пространства, окруженная сушей или расположенная внутри континентального шельфа.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[A sea is a saltwater or brackish part of an ocean or another large body of water, partially enclosed by land or located within a continental shelf.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_salt;
+            concept_earth;
+			concept_sea
+		};;
+	*);
+
+	<= nrel_inclusion: concept_hydrography_object;;

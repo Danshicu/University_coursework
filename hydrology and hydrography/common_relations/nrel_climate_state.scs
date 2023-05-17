@@ -1,0 +1,49 @@
+nrel_climate_state
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[состояние климата*]
+	(* <- lang_ru;; *);
+	[climate state*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_hydrography_object;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_hydrography_object
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (состояние климата*)]
+		(* <- lang_ru;; *);
+		[Def. (climate state**)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[состояние климата* - бинарное отношение, связывающее объект гидрографии и климатические условия, в которых он находится.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[climate state* - a binary relation that connects the hydrographic object and the climatic conditions in which it is located.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_hydrography_object
+		};;
+	*);;

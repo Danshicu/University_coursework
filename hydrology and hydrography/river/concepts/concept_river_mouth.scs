@@ -1,0 +1,38 @@
+concept_river_mouth
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Устье реки]
+	(* <- lang_ru;; *);
+	[River mouth]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Устье реки)]
+		(* <- lang_ru;; *);
+		[Def. (River mouth)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Устье реки - конечный участок водотока, место впадения водотока в другой водный объект или водоток.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[River mouth is the final section of a watercourse, the place where a watercourse flows into another body of water or watercourse.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_river_mouth;
+            concept_watercourse;
+            concept_hydrology_object
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrography;;

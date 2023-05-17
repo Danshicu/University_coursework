@@ -1,0 +1,36 @@
+concept_hydrography_object
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Объект гидрографии]
+	(* <- lang_ru;; *);
+	[Hydrography object]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Объект гидрографии)]
+		(* <- lang_ru;; *);
+		[Def. (Hydrography object)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Объект гидрографии представляет собой любой объект, изучаемый гидрографией.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Hydrography object is any object that is studied by hydrography.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hydrography_object
+		};;
+	*);
+
+	<= nrel_inclusion: concept_hydrography;;

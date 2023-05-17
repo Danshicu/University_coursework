@@ -1,0 +1,83 @@
+section_subject_domain_of_hydrography
+=> nrel_main_idtf:
+        [Раздел. Предметная область гидрографии]
+    (* <- lang_ru;; *);
+        [Section. Subject domain of hydrography]
+    (* <- lang_en;; *);
+<- atomic_section;;
+
+section_subject_domain_of_hydrography = [*
+        subject_domain_of_hydrography
+    <- sc_node_struct;
+        => nrel_main_idtf:
+            [Предметная область Гидрография]
+            (* <- lang_ru;; *);
+            [Subject domain of Hydrography]
+            (* <- lang_en;; *);
+        <- subject_domain;
+    -> rrel_maximum_studied_object_class:
+        concept_hydrography;
+    -> rrel_not_maximum_studied_object_class:
+        concept_ocean;
+        concept_sea;
+        concept_lake;
+        concept_lake_group;
+        concept_surface_water;
+        concept_groundwater;
+        concept_watershed_management;
+        concept_climate_change_impact_on_water;
+        concept_river;
+        concept_river_system;
+        concept_hydroelectric_power_generation;
+        concept_hydrography_object;
+        concept_water_balance;
+        concept_basin;
+        concept_watercourse;
+    -> rrel_explored_relation:
+    	nrel_climate_state;
+        nrel_basin;
+        nrel_water_balance;
+        nrel_topographic;
+        nrel_position_relative_to_the_surface;
+        nrel_lake_group;;
+*];;
+
+section_subject_domain_of_hydrography
+-> rrel_key_sc_element:
+    concept_ocean;
+    concept_sea;
+    concept_lake;
+    concept_lake_group;
+    concept_topography;
+    concept_position_relative_to_the_surface;
+    concept_surface_water;
+    concept_groundwater;
+    concept_water_quality;
+    concept_flood_forecasting;
+    concept_watershed_management;
+    concept_climate_change_impact_on_water;
+    concept_hydrometry;
+    concept_river;
+    concept_river_system;
+    concept_hydroelectric_power_generation;
+    concept_flood;
+    concept_drought;
+    concept_hydrography_object;
+    concept_water_balance;
+    concept_basin;
+    concept_watercourse;
+    concept_water_cycle;
+    concept_geographical_coordinates;
+    concept_hydrology_object;
+    concept_surface_area;
+    nrel_basin;
+    nrel_water_balance;
+    nrel_topographic;
+    nrel_age;
+    nrel_geographical_coordinates;
+    nrel_position_relative_to_the_surface;
+    nrel_lake_group;
+    nrel_river_network;
+    nrel_hydrological_model; 
+    nrel_climate_state;   
+    nrel_water_pollution;;

@@ -1,0 +1,37 @@
+concept_hydroelectric_power_generation
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Производство гидроэлектроэнергии]
+	(* <- lang_ru;; *);
+	[Hydroelectric power generation]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Производство гидроэлектроэнергии)]
+		(* <- lang_ru;; *);
+		[Def. (Hydroelectric power generation)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Производство гидроэлектроэнергии - это процесс использования потенциальной энергии воды, которая преобразуется в кинетическую энергию движения турбин гидроэлектростанций для производства электроэнергии.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Hydroelectric power generation is the process of using the potential energy of water, which is converted into kinetic energy by the motion of turbines in hydroelectric power plants to generate electricity.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_watercourse;
+			concept_hydroelectric_power_generation
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrography;;

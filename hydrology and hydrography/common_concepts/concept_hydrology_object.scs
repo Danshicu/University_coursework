@@ -1,0 +1,36 @@
+concept_hydrology_object
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Объект гидрологии]
+	(* <- lang_ru;; *);
+	[hydrology object]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Объект гидрологии)]
+		(* <- lang_ru;; *);
+		[Def. (Hydrology object)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Объект гидрологии - общий класс объектов, исследуемых гидрологией.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Hydrology object - general object class studied by hydrology.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hydrology_object
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

@@ -1,0 +1,52 @@
+nrel_hydrological_model
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[гидрологическая модель*]
+	(* <- lang_ru;; *);
+	[hydrological model*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_hydrology_object;
+=>nrel_second_domain: concept_hydrological_model;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_hydrology_object;
+		concept_hydrological_model
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (гидрологическая модель*)]
+		(* <- lang_ru;; *);
+		[Def. (hydrological model*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[гидрологическая модель* - бинарное отношение, связывающее объект гидрологии и модель, используемую для её изучения.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[hydrological model* - a binary relation that connects the hydrology object and the model used to study it.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_hydrology_object;
+		    concept_concept_hydrological_model
+		};;
+	*);;

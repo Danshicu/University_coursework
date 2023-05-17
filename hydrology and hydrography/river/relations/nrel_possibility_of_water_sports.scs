@@ -1,0 +1,53 @@
+nrel_possibility_of_water_sports
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[возможность водного спорта*]
+	(* <- lang_ru;; *);
+	[possibility of water sports*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_river;
+=>nrel_second_domain: concept_possibility_of_water_sports;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_river;
+		concept_possibility_of_water_sports
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (возможность водного спорта*)]
+		(* <- lang_ru;; *);
+		[Def. (possibility of water sports*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[возможность водного спорта* - бинарное отношение, связывающее реку и число, указывая на оценку сложности водного спорта на данной реке.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[possibility of water sports* - a binary relation that connects a river and a number indicating the watersports difficulty score on a given river.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_river;
+		    concept_possibility_of_water_sports;
+		    concept_number;
+		};;
+	*);;

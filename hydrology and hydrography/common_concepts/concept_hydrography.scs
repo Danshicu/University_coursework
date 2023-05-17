@@ -1,0 +1,40 @@
+concept_hydrography
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Гидрография]
+	(* <- lang_ru;; *);
+	[Hydrography]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Гидрография)]
+		(* <- lang_ru;; *);
+		[Def. (Hydrography)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гидрография - это наука, изучающая физические особенности и процессы водных объектов, таких как моря, океаны, реки, озёра, включая их формы, глубины, течения, приливы и другие гидрологические явления.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Hydrography is the science that studies the physical features and processes of water bodies, such as seas, oceans, rivers, lakes, including their shapes, depths, currents, tides, and other hydrological phenomena.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_sea;
+            concept_ocean;
+			concept_river;
+			concept_lake;
+			concept_hydrography
+		};;
+	*);
+
+	<= nrel_inclusion: concept_geography;;

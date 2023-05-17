@@ -1,0 +1,36 @@
+concept_hydrology
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Гидрология]
+	(* <- lang_ru;; *);
+	[Hydrology]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Гидрология)]
+		(* <- lang_ru;; *);
+		[Def. (Hydrology)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Гидрология - это наука, изучающая распределение, движение и свойства воды на Земле, включая исследование рек, озер, морей, океанов, атмосферного водяного пара и ледников, а также их взаимодействие с окружающей средой и людьми.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[Hydrology is the science that studies the distribution, movement, and properties of water on Earth, including the study of rivers, lakes, seas, oceans, atmospheric water vapor, and glaciers, as well as their interactions with the environment and humans.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_hydrology
+		};;
+	*);
+
+	<= nrel_inclusion: concept_geography;;

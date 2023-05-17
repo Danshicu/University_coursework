@@ -1,0 +1,52 @@
+nrel_water_pollution
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[загрязнение воды*]
+	(* <- lang_ru;; *);
+	[water pollution*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_hydrology_object;
+=>nrel_second_domain: concept_number;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_hydrology_object;
+		concept_number
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (загрязнение воды*)]
+		(* <- lang_ru;; *);
+		[Def. (water pollution*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[загрязнение воды* - бинарное отношение, связывающее объект гидрологии и число, показывающее степень загрязнения водного объекта.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[water pollution* - a binary relation that connects the hydrology object and a number indicating the degree of pollution of that object.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_hydrology_object;
+		    concept_number
+		};;
+	*);;

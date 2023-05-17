@@ -1,0 +1,38 @@
+concept_coastline
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Береговая линия]
+	(* <- lang_ru;; *);
+	[Coastline]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:
+		[Опр. (Береговая линия)]
+		(* <- lang_ru;; *);
+		[Def. (Coastline)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Береговая линия представляет собой границу между сушей и объектом гидрографии.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[The coastline is the boundary between land and hydrography object.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_land;
+            concept_water;
+			concept_coastline
+		};;
+	*);
+
+	<= nrel_inclusion: concept_hydrography;;

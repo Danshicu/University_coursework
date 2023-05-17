@@ -1,0 +1,38 @@
+concept_possibility_of_water_sports
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Возможность водного спорта]
+	(* <- lang_ru;; *);
+	[Possibility of water sports]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Возможность водного спорта)]
+		(* <- lang_ru;; *);
+		[Def. (Possibility of water sports)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Возможность водного спорта - понятие, указывающее на сложность занятий спортом на данном водном объекте.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Possibility of water sports - a concept pointing at the difficulty of practicing the sport on a given hydrology object.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_international_scale_of_river_complexity;
+            concept_river;
+            concept_possibility_of_water_sports
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrography;;

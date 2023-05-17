@@ -1,0 +1,36 @@
+concept_river_fall
+<- sc_node_class;
+=> nrel_main_idtf:
+	[Падение реки]
+	(* <- lang_ru;; *);
+	[River fall]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Падение реки)]
+		(* <- lang_ru;; *);
+		[Def. (River fall)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Падение реки - это разница высот между верхним и нижним течением реки на единицу длины русла.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			[River fall is the difference in elevation between the upper and lower reaches of a river per unit length of its channel.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_river_fall
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrography;;

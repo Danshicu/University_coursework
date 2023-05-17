@@ -1,0 +1,37 @@
+concept_flood
+<-sc_node_class;
+=>nrel_main_idtf:
+	[Наводнение]
+	(* <- lang_ru;; *);
+	[Flood]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (Наводнение)]
+		(* <- lang_ru;; *);
+		[Def. (Flood)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Наводнение - это природное явление, при котором большие объемы воды выходят из своего русла и затопляют прилегающую территорию.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[Flood is a natural phenomenon in which large volumes of water overflow from their usual channels and inundate adjacent areas.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+			concept_volume;
+			concept_flood
+		};;
+	*);
+
+<= nrel_inclusion: concept_hydrology;;

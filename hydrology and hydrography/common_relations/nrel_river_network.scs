@@ -1,0 +1,51 @@
+nrel_river_network
+<-sc_node_norole_relation;
+<-relation;
+<-binary_relation;
+<-oriented_relation;
+<-antireflexive_relation;
+<-antitransitive_relation;
+<-asymmetric_relation;
+=>nrel_main_idtf:
+	[речная сеть*]
+	(* <- lang_ru;; *);
+	[river network*]
+	(* <- lang_en;; *);
+=>nrel_first_domain: concept_river;
+=>nrel_second_domain: concept_river;
+=>nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination:
+		{
+		concept_river;
+		concept_river
+		};;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+	=>nrel_main_idtf:
+		[Опр. (речная сеть*)]
+		(* <- lang_ru;; *);
+		[Def. (river network*)]
+		(* <- lang_en;; *);;
+	<- definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[речная сеть* - бинарное отношение, связывающее реку и другую более крупную реку, к бассейну которой первая относится.]
+			(* <- lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: 
+			[river network* - a binary relation connecting a river and another larger river, to the basin of which the first one belongs.]
+			(* <- lang_en;; *);;
+		*);;
+	<= nrel_using_constants:
+		{
+            concept_river
+		};;
+	*);;
