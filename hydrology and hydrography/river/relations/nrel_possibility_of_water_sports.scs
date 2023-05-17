@@ -48,6 +48,6 @@ nrel_possibility_of_water_sports
 		{
             concept_river;
 		    concept_possibility_of_water_sports;
-		    concept_number;
+		    concept_number
 		};;
 	*);;
